@@ -1,1 +1,12 @@
-/* accueil.css : styles propres à la page accueil (voir la branche du membre). */
+/* accueil.css : styles propres à la page d'accueil */
+
+.hero { padding-block: clamp(2.5rem, 7vw, 5rem); background: var(--papier); }
+.hero__grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
+.hero__lead { font-size: 1.2rem; color: var(--discret); }
+.hero__actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
+.hero__map { margin: 0; }
+
+@media (max-width: 860px) {
+  .hero__grid { grid-template-columns: 1fr; }
+  .hero__map { max-width: 440px; }
+}
