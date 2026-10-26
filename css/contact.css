@@ -25,3 +25,6 @@
 .formulaire input:user-invalid, .formulaire textarea:user-invalid { border-color: #B3261E; }
 .formulaire textarea { resize: vertical; }
 .formulaire__note { font-size: 0.9rem; color: var(--discret); }
+
+/* Accès */
+#acces { scroll-margin-top: 5rem; }
