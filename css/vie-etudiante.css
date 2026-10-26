@@ -1,1 +1,11 @@
-/* vie-etudiante.css : styles propres à la page vie-etudiante (voir la branche du membre). */
+/* vie-etudiante.css : styles propres à la page Vie étudiante et débouchés */
+
+.projets { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.5rem; }
+.projet { background: var(--blanc); border: 1px solid var(--trait); padding: 1.5rem; }
+.projet p { margin: 0; color: var(--discret); }
+.projet:first-child { border-top: 6px solid var(--signal); }
+.projet:last-child { border-top: 6px solid var(--ocean); }
+
+@media (max-width: 760px) {
+  .projets { grid-template-columns: 1fr; }
+}
