@@ -55,3 +55,18 @@
 @media (max-width: 860px) {
   .iuc { grid-template-columns: 1fr; }
 }
+
+/* Démarche pédagogique */
+.demarche { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 1.5rem; }
+.demarche article { border-top: 3px solid var(--signal); padding-top: 1rem; }
+.demarche p { color: var(--discret); margin: 0; }
+
+/* Appel à l'action */
+.cta { background: var(--ocean); color: #D6E4E1; padding-block: clamp(2.5rem, 6vw, 4rem); }
+.cta h2 { color: #fff; }
+.cta .btn--primary { background: var(--signal); border-color: var(--signal); color: var(--encre); }
+.cta .btn--primary:hover { background: #fff; border-color: #fff; }
+
+@media (max-width: 860px) {
+  .demarche { grid-template-columns: 1fr; gap: 1.5rem; }
+}
