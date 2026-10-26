@@ -27,3 +27,20 @@
 @media (prefers-reduced-motion: reduce) {
   .reseau__liens line { stroke-dashoffset: 0; animation: none; }
 }
+
+/* Domaines : liste en lignes, un trait de couleur à gauche */
+.domaines { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--trait); }
+.domaine {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 0.5rem 2rem; align-items: baseline;
+  padding: 1.25rem 0 1.25rem 1.25rem; border-bottom: 1px solid var(--trait); border-left: 6px solid var(--ocean);
+  transition: border-color 0.15s, background 0.15s;
+}
+.domaine:hover { border-left-color: var(--signal); background: var(--papier); }
+.domaine h3 { margin: 0; }
+.domaine h3 a { color: var(--ocean); text-decoration: none; }
+.domaine h3 a:hover { text-decoration: underline; }
+.domaine p { margin: 0; color: var(--discret); }
+
+@media (max-width: 760px) {
+  .domaine { grid-template-columns: 1fr; }
+}
