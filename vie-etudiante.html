@@ -28,10 +28,61 @@
   </div>
 </header>
 <main id="contenu">
-  <section class="section">
+  <section class="page-head">
     <div class="container">
       <h1>Vie étudiante et débouchés</h1>
-      <p>Cette page est en cours de rédaction sur la branche <code>feature/lena-vie-etudiante</code>.</p>
+      <p>Ce que les étudiants construisent pendant leur formation, avec quels outils, et où cela peut les mener.</p>
+    </div>
+  </section>
+  <section class="section" id="projets">
+    <div class="container">
+      <h2>Des projets concrets</h2>
+      <div class="projets">
+        <article class="projet">
+          <h3>Ce site</h3>
+          <p>Un site de présentation du département, réalisé en groupe avec Git : un dépôt, une branche par membre, des commits documentés et des Pull Requests relues avant la fusion.</p>
+        </article>
+        <article class="projet">
+          <h3>ERIS Inscriptions</h3>
+          <p>Une petite API Java qui calcule les frais d'inscription. Les tests sont écrits avant le code, le projet se construit avec une seule commande Maven, et il est prêt à recevoir un pipeline d'intégration continue.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section section--alt" id="outils-etudiants">
+    <div class="container">
+      <h2>Les outils du quotidien</h2>
+      <dl class="boite-outils">
+        <div><dt>Git et GitHub</dt><dd>Versionner le code, travailler sur des branches, relire les Pull Requests.</dd></div>
+        <div><dt>Maven et JUnit</dt><dd>Compiler, tester et empaqueter un projet Java en une commande.</dd></div>
+        <div><dt>Éditeurs de code</dt><dd>Visual Studio Code, IntelliJ ou Eclipse selon le langage.</dd></div>
+        <div><dt>Linux et terminal</dt><dd>Administrer une machine et automatiser des tâches.</dd></div>
+        <div><dt>Docker</dt><dd>Empaqueter une application pour qu'elle s'exécute de la même façon partout.</dd></div>
+      </dl>
+    </div>
+  </section>
+  <section class="section" id="debouches">
+    <div class="container">
+      <h2>Débouchés</h2>
+      <p class="section__intro">Les diplômés peuvent viser des postes dans les opérateurs de télécommunications, les banques, les administrations, les entreprises de services numériques et les start-up.</p>
+      <ul class="metiers">
+        <li><h3>Développeur</h3><p>Conçoit et maintient des applications web, mobiles ou métiers.</p></li>
+        <li><h3>Administrateur réseaux</h3><p>Installe, configure et surveille l'infrastructure réseau d'une organisation.</p></li>
+        <li><h3>Analyste en cybersécurité</h3><p>Détecte les menaces, corrige les failles et répond aux incidents.</p></li>
+        <li><h3>Ingénieur DevOps</h3><p>Automatise la construction, les tests et le déploiement des logiciels.</p></li>
+        <li><h3>Analyste de données</h3><p>Prépare et interprète des données pour aider à décider.</p></li>
+      </ul>
+    </div>
+  </section>
+  <section class="section section--alt" id="conseils">
+    <div class="container">
+      <h2>Quatre habitudes qui aident</h2>
+      <ul class="conseils">
+        <li>Écrire un peu de code chaque semaine, même hors des séances.</li>
+        <li>Utiliser Git dès le premier projet, avec des messages de commit lisibles.</li>
+        <li>Lire un message d'erreur en entier avant de chercher une solution.</li>
+        <li>Relire le code de ses camarades : on y apprend autant qu'en écrivant le sien.</li>
+      </ul>
     </div>
   </section>
 </main>
