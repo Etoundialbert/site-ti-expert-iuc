@@ -9,3 +9,15 @@
 @media (max-width: 760px) {
   .parcours { grid-template-columns: 1fr; }
 }
+
+/* Détail des domaines */
+.domaine-detail { padding: 1.5rem 0; border-top: 1px solid var(--trait); scroll-margin-top: 5rem; }
+.domaine-detail:first-of-type { margin-top: 1.5rem; }
+.domaine-detail h3 { font-size: 1.4rem; }
+.domaine-detail > p { color: var(--discret); }
+.domaine-detail summary { cursor: pointer; font-weight: 700; color: var(--lien); padding: 0.25rem 0; }
+.domaine-detail summary:hover { color: var(--ocean); }
+.domaine-detail ul { margin: 0.75rem 0 0; padding-left: 1.25rem; }
+.domaine-detail li { margin-bottom: 0.3rem; }
+.domaine-detail details[open] ul { animation: ouvrir 0.2s ease-out; }
+@keyframes ouvrir { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
