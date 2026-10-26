@@ -29,3 +29,12 @@
 .outils thead th { background: var(--ocean); color: #fff; font-family: var(--police-titre); }
 .outils tbody th { width: 32%; color: var(--ocean); }
 .outils tbody tr:last-child th, .outils tbody tr:last-child td { border-bottom: 0; }
+
+/* Modalités */
+.modalites { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem 2rem; }
+.modalites li { padding: 1rem 1.25rem; border: 1px solid var(--trait); border-left: 6px solid var(--signal); background: var(--papier); }
+
+@media (max-width: 760px) {
+  .modalites { grid-template-columns: 1fr; }
+  .outils tbody th { width: auto; }
+}
