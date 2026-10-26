@@ -9,3 +9,8 @@
 @media (max-width: 760px) {
   .projets { grid-template-columns: 1fr; }
 }
+
+/* Outils */
+.boite-outils { margin: 1.5rem 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem 2rem; }
+.boite-outils dt { font: 800 1.1rem/1.2 var(--police-titre); color: var(--ocean); margin-bottom: 0.3rem; }
+.boite-outils dd { margin: 0; color: var(--discret); }
