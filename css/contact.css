@@ -11,3 +11,17 @@
 @media (max-width: 860px) {
   .contact { grid-template-columns: 1fr; }
 }
+
+/* Formulaire */
+.formulaire { margin-top: 1.5rem; }
+.formulaire p { max-width: none; }
+.formulaire label { display: block; font-weight: 700; margin-bottom: 0.3rem; color: var(--ocean); }
+.formulaire input, .formulaire select, .formulaire textarea {
+  width: 100%; padding: 0.7rem 0.85rem; font: inherit; color: var(--encre);
+  background: var(--blanc); border: 2px solid var(--trait); border-radius: 6px;
+}
+.formulaire input:hover, .formulaire select:hover, .formulaire textarea:hover { border-color: var(--discret); }
+.formulaire input:focus, .formulaire select:focus, .formulaire textarea:focus { border-color: var(--ocean); outline: 3px solid var(--signal); outline-offset: 1px; }
+.formulaire input:user-invalid, .formulaire textarea:user-invalid { border-color: #B3261E; }
+.formulaire textarea { resize: vertical; }
+.formulaire__note { font-size: 0.9rem; color: var(--discret); }
