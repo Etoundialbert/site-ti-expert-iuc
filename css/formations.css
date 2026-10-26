@@ -21,3 +21,11 @@
 .domaine-detail li { margin-bottom: 0.3rem; }
 .domaine-detail details[open] ul { animation: ouvrir 0.2s ease-out; }
 @keyframes ouvrir { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+
+/* Tableau des outils */
+.table-wrap { overflow-x: auto; margin-top: 1.5rem; }
+.outils { width: 100%; border-collapse: collapse; background: var(--blanc); border: 1px solid var(--trait); }
+.outils th, .outils td { padding: 0.85rem 1rem; text-align: left; border-bottom: 1px solid var(--trait); vertical-align: top; }
+.outils thead th { background: var(--ocean); color: #fff; font-family: var(--police-titre); }
+.outils tbody th { width: 32%; color: var(--ocean); }
+.outils tbody tr:last-child th, .outils tbody tr:last-child td { border-bottom: 0; }
