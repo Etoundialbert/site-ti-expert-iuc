@@ -10,3 +10,20 @@
   .hero__grid { grid-template-columns: 1fr; }
   .hero__map { max-width: 440px; }
 }
+
+/* Schéma des cinq domaines */
+.reseau { width: 100%; height: auto; overflow: visible; }
+.reseau text { font-family: var(--police-titre); font-size: 14px; font-weight: 600; fill: var(--ocean); }
+.reseau__centre text { fill: #fff; }
+.reseau__noeud rect { fill: #fff; stroke: var(--ocean); stroke-width: 2; transition: fill 0.15s; }
+.reseau__noeud circle { fill: var(--signal); }
+.reseau__noeud:hover rect, .reseau__noeud:focus-visible rect { fill: var(--signal); }
+.reseau__noeud:focus-visible { outline: none; }
+.reseau__noeud:focus-visible rect { stroke-width: 4; }
+
+/* Une seule animation : les liens se tracent au chargement */
+.reseau__liens line { stroke-dasharray: 1; stroke-dashoffset: 1; animation: tracer 1.1s ease-out 0.2s forwards; }
+@keyframes tracer { to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .reseau__liens line { stroke-dashoffset: 0; animation: none; }
+}
