@@ -28,10 +28,129 @@
   </div>
 </header>
 <main id="contenu">
-  <section class="section">
+  <section class="page-head">
     <div class="container">
       <h1>Formations</h1>
-      <p>Cette page est en cours de rédaction sur la branche <code>feature/maxime-formations</code>.</p>
+      <p>Les enseignements de TI Expert suivent le système LMD de l'IUC. Ils couvrent cinq domaines et s'appuient sur la pratique.</p>
+    </div>
+  </section>
+  <section class="section" id="parcours">
+    <div class="container">
+      <h2>Deux grands niveaux</h2>
+      <div class="parcours">
+        <article class="parcours__niveau">
+          <h3>Licence (Bac+3)</h3>
+          <p>On construit les bases : programmation, systèmes, réseaux, bases de données et méthode de travail. Un projet encadré permet de relier ces notions.</p>
+        </article>
+        <article class="parcours__niveau">
+          <h3>Master (Bac+5)</h3>
+          <p>On choisit un domaine et on l'approfondit : projets de plus grande taille, stage en entreprise et travail de fin d'études.</p>
+        </article>
+      </div>
+      <p class="note">Les parcours ouverts et les conditions d'admission changent d'une rentrée à l'autre. Le secrétariat vous renseigne : <a href="contact.html">voir la page Contact</a>.</p>
+    </div>
+  </section>
+  <section class="section section--alt" id="domaines">
+    <div class="container">
+      <h2>Ce qu'on étudie dans chaque domaine</h2>
+      <article class="domaine-detail" id="developpement">
+        <h3>Développement logiciel</h3>
+        <p>Concevoir, programmer, tester et livrer des applications.</p>
+        <details>
+          <summary>Principaux sujets</summary>
+          <ul>
+            <li>Algorithmique et programmation (Java, Python)</li>
+            <li>Développement web : HTML, CSS, JavaScript</li>
+            <li>Bases de données et langage SQL</li>
+            <li>Tests unitaires et revue de code</li>
+            <li>Git et travail en équipe</li>
+          </ul>
+        </details>
+      </article>
+      <article class="domaine-detail" id="reseaux">
+        <h3>Réseaux et télécommunications</h3>
+        <p>Comprendre et configurer les réseaux qui relient les machines et les personnes.</p>
+        <details>
+          <summary>Principaux sujets</summary>
+          <ul>
+            <li>Modèles OSI et TCP/IP, adressage IP</li>
+            <li>Commutation, routage et réseaux locaux virtuels (VLAN)</li>
+            <li>Services réseau : DNS, DHCP, messagerie</li>
+            <li>Notions sur les réseaux mobiles 4G et 5G</li>
+            <li>Supervision et dépannage</li>
+          </ul>
+        </details>
+      </article>
+      <article class="domaine-detail" id="cybersecurite">
+        <h3>Cybersécurité</h3>
+        <p>Protéger les systèmes, les réseaux et les données.</p>
+        <details>
+          <summary>Principaux sujets</summary>
+          <ul>
+            <li>Confidentialité, intégrité et disponibilité</li>
+            <li>Bases de la cryptographie</li>
+            <li>Pare-feu, VPN et sécurisation des échanges</li>
+            <li>Recherche de vulnérabilités et gestion des incidents</li>
+            <li>Développement sécurisé</li>
+          </ul>
+        </details>
+      </article>
+      <article class="domaine-detail" id="cloud-devops">
+        <h3>Cloud et DevOps</h3>
+        <p>Automatiser la livraison d'un logiciel, de l'écriture du code à la mise en ligne.</p>
+        <details>
+          <summary>Principaux sujets</summary>
+          <ul>
+            <li>Ligne de commande et administration Linux</li>
+            <li>Conteneurs avec Docker</li>
+            <li>Intégration et livraison continues (CI/CD)</li>
+            <li>Pipelines avec GitHub Actions</li>
+            <li>Déploiement et supervision</li>
+          </ul>
+        </details>
+      </article>
+      <article class="domaine-detail" id="donnees-ia">
+        <h3>Données et intelligence artificielle</h3>
+        <p>Analyser des données et en tirer des décisions.</p>
+        <details>
+          <summary>Principaux sujets</summary>
+          <ul>
+            <li>Python pour l'analyse de données</li>
+            <li>Statistiques et visualisation</li>
+            <li>Requêtes SQL avancées</li>
+            <li>Introduction à l'apprentissage automatique</li>
+          </ul>
+        </details>
+      </article>
+    </div>
+  </section>
+  <section class="section" id="outils">
+    <div class="container">
+      <h2>Langages et outils rencontrés</h2>
+      <div class="table-wrap">
+        <table class="outils">
+          <caption class="sr-only">Langages et outils par domaine</caption>
+          <thead><tr><th scope="col">Domaine</th><th scope="col">Langages et outils</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Développement logiciel</th><td>Java, Python, JavaScript, SQL, Maven, JUnit</td></tr>
+            <tr><th scope="row">Réseaux et télécommunications</th><td>TCP/IP, routage, VLAN, outils de simulation et de capture de trafic</td></tr>
+            <tr><th scope="row">Cybersécurité</th><td>Chiffrement, pare-feu, VPN, scanners de vulnérabilités</td></tr>
+            <tr><th scope="row">Cloud et DevOps</th><td>Linux, Git, GitHub, Docker, GitHub Actions</td></tr>
+            <tr><th scope="row">Données et IA</th><td>Python, SQL, bibliothèques d'analyse de données</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <section class="section section--alt" id="modalites">
+    <div class="container">
+      <h2>Comment on apprend</h2>
+      <ul class="modalites">
+        <li><strong>Cours</strong> pour poser les notions.</li>
+        <li><strong>Travaux pratiques</strong> en salle machine pour les mettre en œuvre.</li>
+        <li><strong>Projets en groupe</strong> pour apprendre à se répartir le travail et à relire le code des autres.</li>
+        <li><strong>Stage</strong> pour découvrir le métier en entreprise.</li>
+      </ul>
     </div>
   </section>
 </main>

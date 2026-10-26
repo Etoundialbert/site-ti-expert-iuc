@@ -1,1 +1,40 @@
-/* formations.css : styles propres à la page formations (voir la branche du membre). */
+/* formations.css : styles propres à la page Formations */
+
+.parcours { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.5rem; }
+.parcours__niveau { background: var(--blanc); border: 1px solid var(--trait); border-top: 6px solid var(--ocean); padding: 1.5rem; }
+.parcours__niveau:last-child { border-top-color: var(--signal); }
+.parcours__niveau p { margin: 0; color: var(--discret); }
+.note { margin-top: 1.5rem; padding: 1rem 1.25rem; border-left: 4px solid var(--signal); background: var(--blanc); }
+
+@media (max-width: 760px) {
+  .parcours { grid-template-columns: 1fr; }
+}
+
+/* Détail des domaines */
+.domaine-detail { padding: 1.5rem 0; border-top: 1px solid var(--trait); scroll-margin-top: 5rem; }
+.domaine-detail:first-of-type { margin-top: 1.5rem; }
+.domaine-detail h3 { font-size: 1.4rem; }
+.domaine-detail > p { color: var(--discret); }
+.domaine-detail summary { cursor: pointer; font-weight: 700; color: var(--lien); padding: 0.25rem 0; }
+.domaine-detail summary:hover { color: var(--ocean); }
+.domaine-detail ul { margin: 0.75rem 0 0; padding-left: 1.25rem; }
+.domaine-detail li { margin-bottom: 0.3rem; }
+.domaine-detail details[open] ul { animation: ouvrir 0.2s ease-out; }
+@keyframes ouvrir { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+
+/* Tableau des outils */
+.table-wrap { overflow-x: auto; margin-top: 1.5rem; }
+.outils { width: 100%; border-collapse: collapse; background: var(--blanc); border: 1px solid var(--trait); }
+.outils th, .outils td { padding: 0.85rem 1rem; text-align: left; border-bottom: 1px solid var(--trait); vertical-align: top; }
+.outils thead th { background: var(--ocean); color: #fff; font-family: var(--police-titre); }
+.outils tbody th { width: 32%; color: var(--ocean); }
+.outils tbody tr:last-child th, .outils tbody tr:last-child td { border-bottom: 0; }
+
+/* Modalités */
+.modalites { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem 2rem; }
+.modalites li { padding: 1rem 1.25rem; border: 1px solid var(--trait); border-left: 6px solid var(--signal); background: var(--papier); }
+
+@media (max-width: 760px) {
+  .modalites { grid-template-columns: 1fr; }
+  .outils tbody th { width: auto; }
+}
