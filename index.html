@@ -28,10 +28,125 @@
   </div>
 </header>
 <main id="contenu">
-  <section class="section">
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <h1>Se former aux technologies de l'information, à Douala</h1>
+        <p class="hero__lead">TI Expert est le département des technologies de l'information de l'Institut Universitaire de la Côte (IUC). On y apprend à concevoir, relier et protéger les systèmes qui font tourner le numérique.</p>
+        <p class="hero__actions">
+          <a class="btn btn--primary" href="formations.html">Voir les formations</a>
+          <a class="btn btn--ghost" href="contact.html">Nous contacter</a>
+        </p>
+      </div>
+      <figure class="hero__map">
+      <svg class="reseau" viewBox="0 0 520 440" role="group" aria-labelledby="reseau-titre reseau-desc">
+        <title id="reseau-titre">Les cinq domaines du département</title>
+        <desc id="reseau-desc">Schéma en étoile : TI Expert au centre, relié aux domaines développement, réseaux, cybersécurité, cloud et données.</desc>
+        <g class="reseau__liens" fill="none" stroke="#0B3D3A" stroke-width="2" stroke-linecap="round">
+          <line pathLength="1" x1="260" y1="220" x2="260" y2="55"/>
+          <line pathLength="1" x1="260" y1="220" x2="417" y2="169"/>
+          <line pathLength="1" x1="260" y1="220" x2="357" y2="354"/>
+          <line pathLength="1" x1="260" y1="220" x2="163" y2="354"/>
+          <line pathLength="1" x1="260" y1="220" x2="103" y2="169"/>
+        </g>
+        <g fill="none" stroke="#0B3D3A" stroke-opacity=".35" stroke-width="1.5" stroke-dasharray="4 7">
+          <path d="M260 55 L417 169 L357 354 L163 354 L103 169 Z"/>
+        </g>
+        <g class="reseau__centre">
+          <circle cx="260" cy="220" r="46" fill="#0B3D3A"/>
+          <text x="260" y="226" text-anchor="middle" fill="#fff" font-size="17" font-weight="800">TI Expert</text>
+        </g>
+        <a href="formations.html#developpement" class="reseau__noeud">
+          <rect x="185" y="37" width="150" height="36" rx="18"/><circle cx="203" cy="55" r="5"/>
+          <text x="217" y="60">Développement</text>
+        </a>
+        <a href="formations.html#reseaux" class="reseau__noeud">
+          <rect x="361" y="151" width="112" height="36" rx="18"/><circle cx="379" cy="169" r="5"/>
+          <text x="393" y="174">Réseaux</text>
+        </a>
+        <a href="formations.html#cloud-devops" class="reseau__noeud">
+          <rect x="272" y="336" width="170" height="36" rx="18"/><circle cx="290" cy="354" r="5"/>
+          <text x="304" y="359">Cloud et DevOps</text>
+        </a>
+        <a href="formations.html#donnees-ia" class="reseau__noeud">
+          <rect x="91" y="336" width="144" height="36" rx="18"/><circle cx="109" cy="354" r="5"/>
+          <text x="123" y="359">Données et IA</text>
+        </a>
+        <a href="formations.html#cybersecurite" class="reseau__noeud">
+          <rect x="28" y="151" width="150" height="36" rx="18"/><circle cx="46" cy="169" r="5"/>
+          <text x="60" y="174">Cybersécurité</text>
+        </a>
+      </svg>
+      </figure>
+    </div>
+  </section>
+  <section class="section section--alt" id="domaines">
     <div class="container">
-      <h1>Accueil</h1>
-      <p>Cette page est en cours de rédaction sur la branche <code>feature/albert-accueil</code>.</p>
+      <h2>Cinq domaines, un même socle</h2>
+      <p class="section__intro">Chaque domaine s'appuie sur les mêmes bases : programmation, systèmes, réseaux et travail en équipe.</p>
+      <ul class="domaines">
+        <li class="domaine">
+          <h3><a href="formations.html#developpement">Développement logiciel</a></h3>
+          <p>Concevoir des applications web et mobiles, gérer des bases de données, tester et livrer proprement.</p>
+        </li>
+        <li class="domaine">
+          <h3><a href="formations.html#reseaux">Réseaux et télécommunications</a></h3>
+          <p>Comprendre comment les données circulent, du câble à l'antenne, et configurer les équipements.</p>
+        </li>
+        <li class="domaine">
+          <h3><a href="formations.html#cybersecurite">Cybersécurité</a></h3>
+          <p>Repérer les failles, protéger les échanges et réagir quand un système est attaqué.</p>
+        </li>
+        <li class="domaine">
+          <h3><a href="formations.html#cloud-devops">Cloud et DevOps</a></h3>
+          <p>Automatiser la construction, le test et le déploiement d'un logiciel avec des outils professionnels.</p>
+        </li>
+        <li class="domaine">
+          <h3><a href="formations.html#donnees-ia">Données et intelligence artificielle</a></h3>
+          <p>Collecter, analyser et exploiter des données, et découvrir les bases de l'apprentissage automatique.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section" id="iuc">
+    <div class="container iuc">
+      <div>
+        <h2>L'IUC en bref</h2>
+        <p>L'Institut Universitaire de la Côte est un établissement privé d'enseignement supérieur de Douala. Il regroupe plusieurs instituts, dont l'Institut d'Ingénierie Informatique d'Afrique Centrale (3IAC), et propose des formations aux niveaux Bac+2, Bac+3 et Bac+5.</p>
+        <p>TI Expert est le département consacré aux technologies de l'information.</p>
+      </div>
+      <dl class="faits">
+        <div><dt>Création</dt><dd>2002</dd></div>
+        <div><dt>Site</dt><dd>Logbessou, Douala 5<sup>e</sup></dd></div>
+        <div><dt>Organisation</dt><dd>Système LMD</dd></div>
+        <div><dt>Adresse postale</dt><dd>BP 3001 Douala</dd></div>
+      </dl>
+    </div>
+  </section>
+  <section class="section section--alt" id="demarche">
+    <div class="container">
+      <h2>Une formation qui se pratique</h2>
+      <div class="demarche">
+        <article>
+          <h3>Du code et des manipulations à chaque séance</h3>
+          <p>Les notions de cours sont aussitôt mises en œuvre en travaux pratiques : on configure, on programme, on teste.</p>
+        </article>
+        <article>
+          <h3>Les outils des entreprises</h3>
+          <p>Git et GitHub pour travailler à plusieurs, Maven pour construire un projet, des tests automatisés pour vérifier qu'il fonctionne.</p>
+        </article>
+        <article>
+          <h3>Des projets en équipe</h3>
+          <p>Les étudiants se répartissent le travail, relisent le code des autres et apprennent à livrer un projet complet.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="cta">
+    <div class="container cta__inner">
+      <h2>Une question sur les formations ?</h2>
+      <p>Le secrétariat vous renseigne sur les parcours ouverts et les conditions d'admission.</p>
+      <p><a class="btn btn--primary" href="contact.html">Écrire au département</a></p>
     </div>
   </section>
 </main>
