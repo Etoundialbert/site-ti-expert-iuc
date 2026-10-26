@@ -1,1 +1,13 @@
-/* contact.css : styles propres à la page contact (voir la branche du membre). */
+/* contact.css : styles propres à la page Contact */
+
+.contact { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.coordonnees { margin: 1.5rem 0 0; }
+.coordonnees div { padding: 1rem 0; border-top: 1px solid var(--trait); }
+.coordonnees div:last-child { border-bottom: 1px solid var(--trait); }
+.coordonnees dt { font-size: 0.9rem; color: var(--discret); margin-bottom: 0.2rem; }
+.coordonnees dd { margin: 0; font-weight: 600; }
+.note { margin-top: 1.5rem; padding: 1rem 1.25rem; border-left: 4px solid var(--signal); background: var(--blanc); font-size: 0.95rem; }
+
+@media (max-width: 860px) {
+  .contact { grid-template-columns: 1fr; }
+}

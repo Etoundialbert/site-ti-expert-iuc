@@ -34,6 +34,47 @@
       <p>Pour une question sur les formations, une visite ou un partenariat, écrivez ou appelez le secrétariat de l'IUC.</p>
     </div>
   </section>
+  <section class="section" id="coordonnees">
+    <div class="container contact">
+      <div>
+        <h2>Coordonnées</h2>
+        <dl class="coordonnees">
+          <div><dt>Adresse</dt><dd>Institut Universitaire de la Côte<br>Logbessou, Douala 5<sup>e</sup></dd></div>
+          <div><dt>Boîte postale</dt><dd>BP 3001 Douala, Cameroun</dd></div>
+          <div><dt>Téléphone</dt><dd>33 47 35 99<br><a href="tel:+237699919192">699 91 91 92</a></dd></div>
+        </dl>
+        <p class="note">Ces coordonnées sont celles publiées par le ministère de l'Enseignement supérieur (MINESUP). Elles peuvent avoir changé : vérifiez-les avant de vous déplacer.</p>
+      </div>
+      <div id="formulaire">
+        <h2>Écrire au département</h2>
+        <form class="formulaire" action="#" method="post">
+          <p>
+            <label for="nom">Nom et prénom</label>
+            <input id="nom" name="nom" type="text" autocomplete="name" required>
+          </p>
+          <p>
+            <label for="email">Adresse e-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </p>
+          <p>
+            <label for="sujet">Sujet</label>
+            <select id="sujet" name="sujet">
+              <option>Informations sur les formations</option>
+              <option>Inscription</option>
+              <option>Partenariat avec une entreprise</option>
+              <option>Autre demande</option>
+            </select>
+          </p>
+          <p>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </p>
+          <p><button class="btn btn--primary" type="submit">Envoyer le message</button></p>
+          <p class="formulaire__note">Ce formulaire est une maquette : il n'envoie pas encore de message. Pour joindre le département, utilisez les coordonnées de cette page.</p>
+        </form>
+      </div>
+    </div>
+  </section>
 </main>
 <footer class="site-footer">
   <div class="container site-footer__grid">
