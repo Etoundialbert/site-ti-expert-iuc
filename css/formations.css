@@ -1,1 +1,11 @@
-/* formations.css : styles propres à la page formations (voir la branche du membre). */
+/* formations.css : styles propres à la page Formations */
+
+.parcours { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.5rem; }
+.parcours__niveau { background: var(--blanc); border: 1px solid var(--trait); border-top: 6px solid var(--ocean); padding: 1.5rem; }
+.parcours__niveau:last-child { border-top-color: var(--signal); }
+.parcours__niveau p { margin: 0; color: var(--discret); }
+.note { margin-top: 1.5rem; padding: 1rem 1.25rem; border-left: 4px solid var(--signal); background: var(--blanc); }
+
+@media (max-width: 760px) {
+  .parcours { grid-template-columns: 1fr; }
+}
